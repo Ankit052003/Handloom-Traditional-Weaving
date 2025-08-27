@@ -181,11 +181,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [@rvsingh188](https://github.com/rvsingh188)
 - Email: ankitaur2022@gmail.com
 
-## 🙏 Acknowledgments
 
-- Thanks to the React and Node.js communities for excellent documentation
-- Special thanks to all contributors who helped improve this project
-
----
-
-⭐ **If you found this project helpful, please give it a star!** ⭐
