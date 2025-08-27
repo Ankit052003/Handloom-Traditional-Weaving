@@ -1,0 +1,248 @@
+/* About page styles - Formal Academic Layout */
+.about-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px 60px 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.about-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header Section */
+.about-header {
+  text-align: center;
+  padding: 60px 40px 40px 40px;
+  background: linear-gradient(135deg, #2f3f58 0%, #273344 100%);
+  color: white; 
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Main Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  min-height: 600px;
+}
+
+.content-column {
+  padding: 40px 35px;
+  border-right: 1px solid #e2e8f0;
+  background: white;
+}
+
+.content-column:last-child {
+  border-right: none;
+}
+
+/* Content Sections */
+.content-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.content-section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Subsection Styling */
+.subsection {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.subsection-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.subsection h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subsection h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+/* Period List */
+.period-list {
+  margin-top: 15px;
+}
+
+.period-item {
+  margin-bottom: 12px;
+}
+
+.period-item strong {
+  color: #1e293b;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.period-item p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #64748b;
+}
+
+/* Impact Items */
+.impact-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.impact-item:hover {
+  background: #e2e8f0;
+  transform: translateX(5px);
+}
+
+.impact-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.impact-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.impact-item p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Quote Section */
+.quote-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f8fafc;
+  border-left: 4px solid #059669;
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-section blockquote {
+  margin: 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  position: relative;
+}
+
+.quote-section blockquote::before {
+  content: '"';
+  font-size: 3rem;
+  color: #059669;
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  font-family: serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .content-column:nth-child(3) {
+    grid-column: 1 / -1;
+    border-right: none;
+    border-top: 1px solid #e2e8f0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 0 15px 40px 15px;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-column {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 30px 25px;
+  }
+  
+  .content-column:last-child {
+    border-bottom: none;
+  }
+  
+  .about-header {
+    padding: 40px 25px 30px 25px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .content-column {
+    padding: 25px 20px;
+  }
+}

@@ -1,0 +1,210 @@
+/* Footer styles */
+.footer {
+  background: linear-gradient(135deg, #461053 0%, #3c0e42 50%, #420848 100%);
+  color: white;
+  padding: 15px 0 8px;
+  margin-top: auto;
+  box-shadow: 0 -8px 25px rgba(30, 58, 138, 0.3);
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content {
+  max-width: none;
+  margin: 0;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer-section:nth-child(2) {
+  text-align: center;
+}
+
+.footer-section:last-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer-section {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 12px 0;
+  background: transparent;
+  border-radius: 0;
+  backdrop-filter: none;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.footer-section:hover {
+  transform: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.footer-section h3 {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-section h4 {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Override text alignment for first section (Handloom Heritage Foundation) */
+.footer-section:first-child h3,
+.footer-section:first-child p {
+  text-align: left;
+}
+
+/* Keep center alignment for middle section (Our Mission) */
+.footer-section:nth-child(2) h4,
+.footer-section:nth-child(2) ul,
+.footer-section:nth-child(2) li {
+  text-align: center;
+}
+
+/* Override text alignment for last section (Resources) */
+.footer-section:last-child h4,
+.footer-section:last-child ul,
+.footer-section:last-child li {
+  text-align: left;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.footer-section ul li::before {
+  content: '▪';
+  color: #3b82f6;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  padding: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-links a:hover {
+  transform: scale(1.15) translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-section p,
+.footer-section a {
+  color: #e2e8f0;
+  text-decoration: none;
+  line-height: 1.7;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.footer-bottom {
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  padding-top: 15px;
+  text-align: center;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-section:first-child,
+  .footer-section:last-child {
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .footer-section:first-child h3,
+  .footer-section:first-child p,
+  .footer-section:last-child h4,
+  .footer-section:last-child ul,
+  .footer-section:last-child li {
+    text-align: center;
+  }
+}
