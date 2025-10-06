@@ -178,7 +178,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Author
 
 **Ankit Singh**
-- GitHub: [@Ankit052003]([https://github.com/Ankit052003](https://github.com/Ankit052003/Handloom-Traditional-Weaving))
+- GitHub: [@Ankit052003]((https://github.com/Ankit052003/Handloom-Traditional-Weaving))
 - Email: ankitaur2022@gmail.com
 
 
